@@ -12,44 +12,52 @@
 
     <div class="barra-lateral">
         <div class="nombre-pagina">
-            <ion-icon id="logo" name="diamond-outline"></ion-icon>
-            <span>PORTAFOLIOWEB</span>
+            <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+            <span>chocoflow</span>
         </div>
 
         <button class="boton">
             <ion-icon name="add-outline"></ion-icon>
-            <span>Crear portafolio</span>
+            <span>Crear Portafolio</span>
         </button>
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a href="/index.html">
+                    <a href="#">
                         <ion-icon name="home-outline"></ion-icon>
                         <span>Inicio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/proyectos/proyecto.html
-                    ">
+                    <a href="#proyect" onclick="scrollToSection(event, 'proyect')">
                         <ion-icon name="file-tray-stacked-outline"></ion-icon>
                         <span>Proyectos</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <ion-icon name="people-outline"></ion-icon>
-                        <span>Contacto</span>
+                    <a href="#skill" onclick="scrollToSection(event, 'skill')">
+                        <ion-icon name="cash-outline"></ion-icon>
+                        <span>Skills</span>
                     </a>
                 </li>
+                <li>
+                    <a href="/evaCua/formulario/formulario.html">
+                        <ion-icon name="settings-outline"></ion-icon>
+                        <span>Contacto
+                        </span>
+                    </a>
+                </li>
+                
             </ul>
         </nav>
         
-        <div class="palanca">
-            <div class="modo-oscuro">
-                <ion-icon name="moon-outline"></ion-icon>
-                <span>Modo Oscuro</span>
-            </div>
+        <div class="linea"></div>
 
+        <div id="modo-oscuro" class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Modo oscuro</span>
+            </div>
             <div class="switch">
                 <div class="base">
                     <div class="circulo">
@@ -59,23 +67,75 @@
             </div>
         </div>
     </div>
+    </div>
 
     <main>
-
+        <div class="banner">
+            
+        </div>
         
 
         <div class="info">
             <div class="imagen-usuario">
-                <img src="turner.jpg" alt="">
+                <img src="/evaCua/imagen/perfil.jpeg" alt="">
             </div>
-            <h2>
-                PEDRO TURNER
-            </h2>
-            <p>
-                Pedro es una persona creativa y apasionada por todo lo relacionado con el diseño y la comunicación visual. Desde pequeña, le ha fascinado la idea de transformar conceptos abstractos en imágenes que cuenten historias. Se especializa en branding y diseño digital, y disfruta trabajando de manera independiente para tener la flexibilidad de elegir proyectos que le inspiren.
-            </p>
+            <div class="info-user">
+                <h2>
+                    PEDRO TURNER
+                </h2>
+                <p>
+                    Soy un programador apasionado por la tecnología y el desarrollo de software. Disfruto resolviendo problemas complejos y creando soluciones eficientes a través del código. Mi experiencia abarca desde el desarrollo web hasta aplicaciones de escritorio y bases de datos. Me esfuerzo por mantenerme actualizado con las últimas tecnologías y prácticas de la industria, y estoy constantemente aprendiendo para mejorar mis habilidades. Trabajo bien en equipo y me motiva contribuir a proyectos que tengan un impacto positivo. ¡Estoy siempre en busca de nuevos desafíos y oportunidades para crecer profesionalmente!
+                </p>
+            </div>
+            
         </div>
         
+        <section id="proyect" class="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto">
+                    <img src="/evaCua/imagen/imagenpr1.png" alt="Proyecto 1">
+                    <h3>Pagina web ODS</h3>
+                    <p>Una plataforma educativa diseñada para informar sobre los Objetivos de Desarrollo Sostenible (ODS) de la ONU. Ofrece recursos interactivos y guías prácticas para inspirar a personas y organizaciones a contribuir a un futuro más sostenible.</p>
+                    <a href="https://link-al-proyecto1.com" target="_blank">Ver Proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <img src="/evaCua/imagen/imagenpr2.jpg" alt="Proyecto 2">
+                    <h3>Aplicativo Web</h3>
+                    <p>Una aplicación web diseñada para facilitar la gestión de inventarios y ventas en pequeñas y medianas empresas. Enfocada en el ODS 9, busca promover la eficiencia y sostenibilidad en los procesos industriales mediante herramientas simples e intuitivas.</p>
+                    <a href="https://link-al-proyecto2.com" target="_blank">Ver Proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <img src="/evaCua/imagen/imagenpr3.png" alt="Proyecto 3">
+                    <h3>Programa de automatizacion</h3>
+                    <p>Un programa diseñado para automatizar flujos de trabajo y tareas administrativas usando tecnologías de Google Workspace. Optimiza procesos como la gestión de documentos, hojas de cálculo y correos electrónicos, mejorando la eficiencia en equipos de trabajo.</p>
+                    <a href="https://link-al-proyecto3.com" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="skill" class="skills">
+            <h2>Mis habilidades</h2>
+
+            <div class="habilidades">
+                <p>
+                    Soy un programador web con una sólida comprensión y experiencia en el uso de HTML, CSS y JavaScript. Con HTML, soy capaz de estructurar páginas web de manera eficiente, asegurando una organización clara y accesible para los usuarios y los motores de búsqueda. Utilizo CSS para crear diseños atractivos, funcionales y adaptativos, empleando desde las propiedades básicas hasta técnicas avanzadas como flexbox, grid, animaciones y transiciones, para lograr una experiencia de usuario fluida y profesional. <br>
+
+                    Mi enfoque se centra en escribir código limpio, eficiente y accesible, priorizando la compatibilidad entre navegadores y dispositivos. Además, me apasiona mantenerme actualizado con las últimas tendencias y mejores prácticas en el desarrollo web, buscando siempre mejorar mis habilidades y entregar soluciones innovadoras y de alta calidad.
+                </p>
+
+                <div class="carruseles">
+                    <section class="carrusel">
+                        <img src="/evaCua/imagen/HTML5LOGO.png" alt="">
+                        <img src="/evaCua/imagen/Jslogo.png" alt="">
+                        <img src="/evaCua/imagen/csslogo.png" alt="">
+                    </section>
+                </div>
+            </div>
+            
+
+        </section>
         
     </main>
 
